@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <div :class="container">
+            <ul>
+                <li>Home</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        
+    }
+</script>
+
+<style lang="scss" scoped>
+
+</style>

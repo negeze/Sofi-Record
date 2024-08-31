@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+Outfit
+body {
+    background-color: #2A2727;
+    color: #ffffff; /* Set default text color to white if needed */
+    margin: 0 auto;
+  }
+  
+h1 {
+    font-family: 'Outfit', sans-serif;
+  }
