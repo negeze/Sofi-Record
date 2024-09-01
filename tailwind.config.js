@@ -18,6 +18,14 @@ export default {
       },
       lineHeight: {
         '20':'90px'
+      },
+      height:{
+        '8rem':'25'
+
+      },
+      width:{
+        '8rem':'25'
+
       }
     },
   },

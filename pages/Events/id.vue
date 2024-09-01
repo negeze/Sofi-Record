@@ -1,8 +1,6 @@
 <template>
     <div>
-     <div class="container mx-auto px-4">
-
-     </div>   
+        <h1>Event DETAIL</h1>
     </div>
 </template>
 
@@ -10,6 +8,6 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

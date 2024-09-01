@@ -1,6 +1,8 @@
 <template>
     <div class="m-auto">
     <Header/>
+    <slot/>
+    <footer/>
 </div>
 </template>
 

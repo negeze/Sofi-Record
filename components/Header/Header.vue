@@ -45,9 +45,12 @@
       <NuxtLink to="/Portfolio" class="">Portfolio</NuxtLink>
       <NuxtLink to="/Blog" class="">Blog</NuxtLink> 
       <NuxtLink to="/Contact">
+
+
         <button class="bg-[#CE253F] hover:bg-black-700 text-white font-bold py-2 px-4 rounded">
           Contact Me
         </button>
+        
       </NuxtLink> 
     </nav>
   </header>

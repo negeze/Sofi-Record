@@ -1,4 +1,3 @@
-<!-- pages/index.vue -->
 <template>
     <div class="">
       <!-- Hero Section -->
@@ -7,7 +6,7 @@
   
       <ServiceSection/>
       <!-- About Section -->
-    <<AboutSection/>
+    <AboutSection/>
   
       <!-- Clients Section -->
     <Clients/>
@@ -102,27 +101,34 @@
               <img src="../public/Event1.png"  alt="Event" class="w-full h-40 object-cover mb-4 rounded">
               <h3 class="text-xl font-semibold mb-2">Event Title</h3>
               <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-              <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700"><a href="#">See Details</a></button>
-              
+              <NuxtLink to="/Events/${{event.id}}">
+                    <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">See Details</button>
+              </NuxtLink>
             </div>
             <!-- Event Card 2-->
             <div class="bg-white p-6 rounded-lg shadow-md">
               <img  src="../public/Event2.png" alt="Event" class="w-full h-40 object-cover mb-4 rounded">
               <h3 class="text-xl font-semibold mb-2">Event Title</h3>
               <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-              <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700"><a href="#">See Details</a></button>
+              
+              <NuxtLink to="/Events/${{event.id}}">
+                    <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">See Details</button>
+              </NuxtLink>
             </div>
             <!-- Event Card 3-->
             <div class="bg-white p-6 rounded-lg shadow-md">
               <img src="../public/Event3.png" alt="Event" class="w-full h-40 object-cover mb-4 rounded">
               <h3 class="text-xl font-semibold mb-2">Event Title</h3>
               <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
-              <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700"><a href="#">See Details</a></button>
+              <NuxtLink to="/Events/${{event.id}}">
+                    <button class="py-1 px-4 mt-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">See Details</button>
+              </NuxtLink>
             </div>
-            <!-- Repeat for other events -->
+        
           </div>
         </div>
       </section>
+      <Awards/>
   
       <Footer/>
 
@@ -130,12 +136,17 @@
   </template>
   
   <script>
-import AboutSection from '~/components/AboutSection.vue';
-import Clients from '~/components/Clients.vue';
-import ServiceSection from '~/components/ServiceSection.vue';
+
+  
+
 
   export default {
-    name: 'HomePage'
+    name: 'HomePage',
+    methods: {
+    gotoEventPage() {
+      this.$router.push('/Events');
+    }
+  }
   }
   </script>
   
