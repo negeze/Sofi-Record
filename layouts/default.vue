@@ -2,7 +2,7 @@
     <div class="m-auto">
     <Header/>
     <slot/>
-    <footer/>
+    <Footer/>
 </div>
 </template>
 

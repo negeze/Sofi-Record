@@ -1,7 +1,6 @@
 <template>
     <div>
-        <h2>This is   Events</h2>
-        
+
     </div>
 </template>
 
@@ -11,6 +10,6 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 </style>

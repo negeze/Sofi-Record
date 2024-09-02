@@ -3,7 +3,7 @@
            <!-- Services Section -->
       <section id="services" class="services  ">
         <div class="container mx-auto mt-5">
-        <h1 class="text-3xl md:text-5xl font-bold ">Service</h1>
+        <h1 class="text-3xl md:text-4xl font-bold ">Service</h1>
           <h2 class="text-2xl font-bold ">  Explore the World of Music  Production</h2>
           <p class="py-4 md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. .</p>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
@@ -46,7 +46,8 @@
               <p class="text-gray-300">Worem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
             </div>
           </div>
-          <button class="py-4 m-3 px-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">Read More</button>
+          
+          <NuxtLink to="/Services"></NuxtLink><button class="py-4 m-3 px-4 md:py-3 md:px-6 text-base md:text-lg lg:text-xl font-bold bg-primary rounded-lg text-white border-none cursor-pointer transition duration-300 ease-in-out hover:bg-red-700">Read More</button>
         </div>
         
       </section>
